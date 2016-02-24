@@ -1,5 +1,5 @@
 # ReactJS JSX Transformer Maven Plugin
-This plugin is created to simplify building ReactJS components in a Adobe Experience Manager using Eclipse.
+This plugin is created to simplify building ReactJS components in an Adobe Experience Manager project using Eclipse.
 
 This is only an extended version. The original project can be viewed here: [spaulg/react-jsxtransformer-maven-plugin](https://github.com/spaulg/react-jsxtransformer-maven-plugin).
 Credits to the original author, [Simon Paulger](https://github.com/spaulg).
