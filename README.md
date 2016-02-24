@@ -9,8 +9,7 @@ Credits to the original author, [Simon Paulger](https://github.com/spaulg).
 ### Set-up
 
 1. Prepare plugin for installation
-
-run `mvn package` inside the project directory then look for the path of the jar created and save it for later.
+-- run `mvn package` inside the project directory then look for the path of the jar created and save it for later.
 
 2. Install into local repository
 ```shell
@@ -51,5 +50,7 @@ mvn clean install -PautoInstallPackage
 ```
 
 **NOTES:**
+
 -- This plugin will automatically create a folder named 'build' inside the directory provided in the configuration.
+
 -- Delete files in the 'build' directory before building the project because the plugin will create a new 'build' folder if the existing 'build' folder already has contents.
