@@ -54,7 +54,7 @@ mvn clean install -PautoInstallPackage
 1. [Set-up Maven in Sublime](https://coderwall.com/p/etesrq/how-to-set-up-maven-in-sublime-text)
 2. Go to Tools > Build System > New Build System
 3. Copy the following into the new file
-```javascript
+```js
 {
 	"working_dir": "$file_path",	
 	"shell_cmd":"mvn clean install",
