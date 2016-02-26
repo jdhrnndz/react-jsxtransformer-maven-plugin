@@ -105,7 +105,7 @@ mvn clean install -PautoInstallPackage
  - Press Enter
  
 7. Add to pom.xml of the content module
-```
+```xml
 <plugin>
     <groupId> ph.dev.jdhrnndz </groupId>
     <artifactId> react-jsxtransformer-maven-plugin </artifactId>
