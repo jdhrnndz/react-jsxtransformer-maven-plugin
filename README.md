@@ -55,40 +55,38 @@ mvn clean install -PautoInstallPackage
 2. Go to Tools > Build System > New Build System
 3. Copy the following into the new file
 ```json
-    {
-        "working_dir": "$file_path",	
-    	"shell_cmd":"mvn clean install",
-    	"variants": [
-    		{
-    			"name": "mvn clean install",
-    			"shell_cmd": "mvn clean install"
-    		},
-    		{
-    			"name": "mvn full build",
-    			"shell_cmd": "mvn -P full-build clean install"
-    		},
-    		{ 
-    			"name": "mvn clean",
-    			"shell_cmd": "mvn clean"
-    		},
-    		{ 
-    			"name": "mvn skipTests",
-    			"shell_cmd": "mvn clean install -DskipTests"
-    		},
-    		{
-    			"name": "mvn package",
-    			"shell_cmd": "mvn package"
-    		},
-    		{
-    			"name": "mvn localInstall",
-    			"shell_cmd": "mvn org.apache.maven.plugins:maven-install-plugin:2.5.2:install-file -Dfile=path/to/the/jar/file -DgroupId=ph.dev.jdhrnndz -DartifactId=react-jsxtransformer-maven-plugin -Dversion=1.0-SNAPSHOT -Dpackaging=jar -DlocalRepositoryPath=path/to/the/aem/project"
-    		},
-    		{
-    			"name": "mvn autoInstallPackage",
-    			"shell_cmd": "mvn clean install -PautoInstallPackage"
-    		}
-    	]
-    }
+"working_dir": "$file_path",	
+"shell_cmd":"mvn clean install",
+"variants": [
+	{
+		"name": "mvn clean install",
+		"shell_cmd": "mvn clean install"
+	},
+	{
+		"name": "mvn full build",
+		"shell_cmd": "mvn -P full-build clean install"
+	},
+	{ 
+		"name": "mvn clean",
+		"shell_cmd": "mvn clean"
+	},
+	{ 
+		"name": "mvn skipTests",
+		"shell_cmd": "mvn clean install -DskipTests"
+	},
+	{
+		"name": "mvn package",
+		"shell_cmd": "mvn package"
+	},
+	{
+		"name": "mvn localInstall",
+		"shell_cmd": "mvn org.apache.maven.plugins:maven-install-plugin:2.5.2:install-file -Dfile=path/to/the/jar/file -DgroupId=ph.dev.jdhrnndz -DartifactId=react-jsxtransformer-maven-plugin -Dversion=1.0-SNAPSHOT -Dpackaging=jar -DlocalRepositoryPath=path/to/the/aem/project"
+	},
+	{
+		"name": "mvn autoInstallPackage",
+		"shell_cmd": "mvn clean install -PautoInstallPackage"
+	}
+]
 ```
 4. Save as `Maven.sublime-build`
 5. Prepare plugin for installation
